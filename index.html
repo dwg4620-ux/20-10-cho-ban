@@ -255,7 +255,7 @@ body.game-started .app-root { display:block; }
     </section>
 
     <section class="stage" id="catchStage" hidden>
-      <div class="stage-head"><div><div class="stage-kicker">Thử thách 03</div><h2>Bắt tim trong 15 giây</h2><p class="sub">Chạm vào những trái tim xuất hiện trong khu vực chơi. Bắt được 10 tim để mở khóa màn chọn hộp quà.</p></div><span class="pill" id="catchScore">💗 0/10 tim</span></div>
+      <div class="stage-head"><div><div class="stage-kicker">Thử thách 03</div><h2>Bắt tim trong 15 giây</h2><p class="sub">Chạm vào những hình dễ thương xuất hiện trong khu vực chơi. Bắt được 10 hình để mở khóa màn chọn hộp quà.</p></div><span class="pill" id="catchScore">💗 0/10 tim</span></div>
       <div class="game-stat"><span class="stat" id="timerText">⏱ 15 giây</span><span class="stat">Mục tiêu: 10 tim</span></div>
       <div class="timerbar"><div class="timerfill" id="timerFill"></div></div>
       <div class="catch-area" id="catchArea" aria-label="Khu vực bắt tim"><div style="position:absolute;inset:0;display:grid;place-items:center;color:var(--muted);font-size:13px;pointer-events:none" id="catchHint">Nhấn “Bắt đầu” để chơi 💞</div></div>
@@ -320,7 +320,7 @@ body.game-started .app-root { display:block; }
       <path d="M48 150L170 177L292 150L216 260L124 260Z" fill="#fff0f7" opacity=".88"/><path d="M170 177L170 345M84 176L139 260L110 340M256 176L201 260L230 340" fill="none" stroke="#fff6fa" stroke-width="2" opacity=".8"/>
       <g transform="translate(170 273)"><path d="M-9 0C-55-36-86-7-58 12C-40 23-21 12-9 4Z" fill="url(#ribbon)" stroke="#c82c62" stroke-width="2"/><path d="M9 0C55-36 86-7 58 12C40 23 21 12 9 4Z" fill="url(#ribbon)" stroke="#c82c62" stroke-width="2"/><path d="M-11 9L-24 76L-1 56L10 81L11 9Z" fill="#e94579" stroke="#c82c62" stroke-width="2"/><path d="M11 9L22 69L39 52L29 7Z" fill="#f35d8c" stroke="#c82c62" stroke-width="2"/><ellipse rx="13" ry="11" fill="#d92f68" stroke="#b82055" stroke-width="2"/></g>
     </svg></span>`;
-    $('gateGreeting').innerHTML=`Thân tặng bạn <strong>${name.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}</strong><br>Chúc bạn ngày 20/10 luôn rạng rỡ như hoa, dịu dàng mà mạnh mẽ, được yêu thương thật nhiều và mọi điều mong ước đều nở rộ. Chúc bạn luôn vui vẻ, tự tin và học tiếng Trung thật giỏi nhé! 💗`;
+    $('gateGreeting').innerHTML=`Thân tặng bạn <strong>${name.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}</strong><br>Chúc bạn ngày 20/10 luôn rạng rỡ như hoa, dịu dàng mà mạnh mẽ, được yêu thương thật nhiều và mọi điều mong ước đều nở rộ. Chúc bạn luôn vui vẻ, tự tin và học thật hạnh phúc nhé! 💗`;
     $('gateGreeting').hidden=false;$('enterGameButton').hidden=false;$('bloomButton').hidden=true;$('gateHint').textContent='Bó hoa của riêng bạn đã sẵn sàng 🌸';
     // Điểm nhấn khi bó hoa hoàn thành: chuông chúc mừng tươi vui và hoa giấy.
     celebrate(window.innerWidth / 2, Math.min(window.innerHeight * .38, 320));
